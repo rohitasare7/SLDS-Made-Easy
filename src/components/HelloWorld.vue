@@ -8,37 +8,35 @@ defineProps({
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
+<div class="slds-p-around--large slds-container--center slds-container--small landing">
+    <h1 class="slds-text-heading--large">
+      Welcome to the Design System Starter Kit
+    </h1>
+    <p class="slds-text-body--regular slds-m-vertical--large">A rapid prototyping environment using the <a href="https://www.lightningdesignsystem.com">Lightning Design System</a>, brought to you by <a href="https://twitter.com/SalesforceUX">Salesforce UX</a>.</p>
+
+    <img src="https://raw.githubusercontent.com/salesforce-ux/design-system-starter-kit/b9fec758639a9090eb6a370e17dcdb2cc2524097/src/assets/logo.svg" alt="" />
+
+    <h2 class="slds-text-heading--medium slds-m-top--large">Get Started</h2>
+    <p class="slds-text-body--regular slds-m-top--large">Edit files in the <a href="https://github.com/salesforce-ux/design-system-starter-kit/tree/master/src"><code>src</code> directory</a> to start building your prototype.</p>
+    <p class="slds-text-body--regular slds-m-top--large">Lightning Design System component documentation and markup available at: <a href="https://www.lightningdesignsystem.com">https://www.lightningdesignsystem.com</a>.</p>
+    <hr />
+
+    <h2 class="slds-text-heading--medium slds-m-top--large">Example Prototype with Data</h2>
+    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">We’ve put together a prototype to show you what the starter kit is capable of, have a look!</p>
+    <p class="slds-text-body--regular slds-m-vertical--large">Data shown in this example comes from <a href="https://github.com/salesforce-ux/design-system-starter-kit/blob/master/src/views/data/example.json">views/data/example.json</a>. Check out the <a href="https://github.com/salesforce-ux/design-system-starter-kit/blob/master/src/views/data/README.md">README</a> to learn how we are injecting data with "gulp-nunjucks".</p>
+    <p><a href="/example.html" class="slds-button slds-button--brand">Example Prototype</a></p>
+    <hr />
+
+    <h2 class="slds-text-heading--medium slds-m-top--large">Feedback and Questions</h2>
+    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">Ask questions about prototyping using the design system, report issues about the starter kit… <a href="https://github.com/salesforce-ux/design-system-starter-kit/">on the GitHub repository</a>.</p>
+    <hr />
+
+    <h2 class="slds-text-heading--medium slds-m-top--large">See Also</h2>
+    <p class="slds-text-body--regular slds-m-top--large slds-m-bottom--small">More comfortable designing in <a href="https://www.sketchapp.com/">Sketch</a>? Try the <a href="https://github.com/salesforce-ux/design-system-ui-kit/">Design System UI Kit</a>.</p>
+
   </div>
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
 
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}
 </style>

@@ -1,4 +1,5 @@
 import './assets/main.css'
+import '@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css';
 
 import { createApp } from 'vue'
 import App from './App.vue'
