@@ -64,11 +64,11 @@ const scrollToSection = (id) => {
 
       <!-- Content Area -->
       <section class="slds-col slds-size_6-of-7 slds-p-around_medium main-content">
-        <div v-if="items.length > 0" v-for="(item, index) in items" :key="index" :id="item.id" class="slds-card slds-m-bottom_medium slds-p-around_large br-3" v-show="selectedSection === item.id" :class="item.class">
+        <div v-if="items.length > 0" v-for="(item, index) in items" :key="index" :id="item.id" class="slds-card slds-m-bottom_medium slds-p-around_large br-3 border-none" v-show="selectedSection === item.id" :class="item.class">
           <h2 class="slds-text-heading_medium slds-m-bottom_medium">{{ item.name }}</h2>
           <component :is="item.content"></component>
         </div>
-        <div v-else class="slds-card slds-m-bottom_medium slds-p-around_large br-3">
+        <div v-else class="slds-card slds-m-bottom_medium slds-p-around_large br-3 border-none">
           <p>No sections available.</p>
         </div>
       </section>
@@ -126,5 +126,8 @@ const scrollToSection = (id) => {
 
 .border-none {
   border: none !important;
+}
+.slds-global-header {
+  height: 4.125rem;
 }
 </style>
