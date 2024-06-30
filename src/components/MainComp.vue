@@ -130,6 +130,7 @@ const scrollToSection = (id) => {
 
 .border-none {
   border: none !important;
+  box-shadow: none !important;
 }
 
 .slds-global-header {
