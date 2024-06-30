@@ -69,5 +69,6 @@ const copyStyleToClipboard = (event) => {
 .font-size [data-value] {
   cursor: pointer;
   margin: 15px 0;
+  color: var(--slds-g-color-palette-blue-20);
 }
 </style>
