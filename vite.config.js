@@ -8,9 +8,12 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base: "/SLDS-Made-Easy/",
   resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+    // alias: {
+    //   '@': fileURLToPath(new URL('./src', import.meta.url))
+    // },
+    alias: [
+    ]
   }
 })
