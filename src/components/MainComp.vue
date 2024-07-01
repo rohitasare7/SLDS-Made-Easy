@@ -29,12 +29,13 @@ const selectSection = (id) => {
   selectedSection.value = id;
 };
 
+/*
 const scrollToSection = (id) => {
   const section = document.getElementById(id);
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
-};
+};*/
 </script>
 
 <template>
@@ -44,7 +45,7 @@ const scrollToSection = (id) => {
     <header>
       <div class="slds-global-header slds-grid slds-grid_vertical-align-center slds-grid_align-center">
         <div class="slds-global-header__item slds-grid slds-grid_align-center">
-          <img src="/src/assets/logo_blue.png" alt="Logo"
+          <img src="/src/assets/images/logo_blue.png" alt="Logo"
             style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
           <div class="slds-text-align_center slds-align-middle logoText">SLDS Made Easy</div>
         </div>
